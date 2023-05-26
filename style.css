@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2vh;
+}
+
+.container h3 {
+    font-size: 24px;
+    
+}
+.container h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container p {
+    width: 60%;
+    padding: 20px 0;
+    line-height: 24px;
+}
+.container a {
+    display: inline;
+    margin-right: 15px;
+    background: #010101;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
