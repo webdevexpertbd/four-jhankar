@@ -8,6 +8,7 @@
     background-image: url("images/Untitled\ design.png");
     background-size: cover;
     background-position: top-center;
+    align-items: center;
 }
 
 .container {
