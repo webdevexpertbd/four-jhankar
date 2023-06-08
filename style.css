@@ -174,3 +174,15 @@ table {
     color: #fff;
 
 }
+
+.transform .box {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 300px;
+    background-color:rgb(160, 13, 13);
+}
+
+.transform .box .inner {
+    background: greenyellow;
+    transform: rotate(45deg);
+}
