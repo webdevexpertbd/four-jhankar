@@ -186,3 +186,16 @@ table {
     background: greenyellow;
     transform: rotate(45deg);
 }
+
+.transition .transition-box {
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    transition: background-color 2s ease-in-out;
+}
+
+.transition .transition-box:hover {
+    background-color: red;
+    transform: rotate(90deg);
+    border-radius: 50%;
+}
