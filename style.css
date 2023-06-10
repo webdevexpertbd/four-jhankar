@@ -191,11 +191,85 @@ table {
     width: 200px;
     height: 200px;
     background-color: cyan;
-    transition: background-color 2s ease-in-out;
+    transform: rotate(90deg);
+    border-radius: 50%;
 }
 
 .transition .transition-box:hover {
-    background-color: red;
-    transform: rotate(90deg);
+    
+}
+
+.bat-heating {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+    
+}
+
+.bat-heating:hover .stick {
+    transform: rotate(-40deg);
+    transform-origin: 100% 0%;
+}
+
+.stick {
+    width: 40px;
+    height: 400px;
+    background-color: tomato;
+    border-radius: 20px;
+    transition: transform 3s ease-in;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    top: 250px;
+    left: 270px;
+    transition: transform 3s ease-in-out 3s;
+    
+}
+
+.bat-heating:hover .ball {
+    transform: translate(500px, -300px);
+} 
+
+
+.animation {
+    padding: 100px;
+}
+
+.animate-box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    animation-name: drop;
+    animation-delay: .4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drop {
+    0% {
+        left: 200px;
+
+    }
+
+    25% {
+        left: 300px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    75% {
+        left: 500px;
+    }
+
+    100% {
+        left: 700px;
+    }
 }
