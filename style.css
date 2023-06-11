@@ -273,3 +273,95 @@ table {
         left: 700px;
     }
 }
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-box .box {
+    width: 200px;
+    height: 150px;
+    background: orangered;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.container {
+    display: flex;
+}
+
+.container .items {
+    
+}
+
+.calendar {
+    width: 500px;
+    background-color: rgb(235, 234, 234);
+    margin: 300px;
+    padding: 50px 30px;
+}
+
+.calendar h2 {
+    font-size: 38px;
+    padding: 30px 0;
+    text-align: center;
+}
+.calendar ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar ul li {
+    list-style: none;
+    font-size: 16px;
+    font-family: tahoma;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 7px;
+    transition: background-color .3s ease-in-out;
+}
+
+.calendar ul li:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+}
+
+.calendar ul li:hover {
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+.next-month {
+    color: #747373;
+}
+
+.another-month {
+    width: 600px;
+    background-color: rgb(201, 197, 197);
+    padding: 100px;
+    margin: 0 auto;
+}
+.another-month h2 {
+    font-size: 32px;
+    text-align: center;
+}
+.another-month .june {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.another-month ul li {
+    display: flex;
+    gap: 10px;
+    margin: 3px;
+    padding: 10px;
+    font-size: 1.25rem;
+    background-color: rgba(128, 128, 128, 0.459);
+    justify-content: center;
+}
+
+.another-month .june .disable {
+    background-color: #ddd;
+    color: #9b9a9a;
+}
